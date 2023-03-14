@@ -5,17 +5,17 @@
 
 ## Part 1 Answers
 
-1. Disks:
-2. Unpartitioned disk:
+1. Disks: xvda and xvdb
+2. Unpartitioned disk: xvdb
 3. `gdisk` main menu options
-   - `p`
-   - `o`
-   - `n`
-   - `i`
-   - `w`
-4. Using the `gdisk` utility on the disk:
-5.
-6.
+   - `p` Prints the partition table
+   - `o` creates a empty partition table and erases the exisiting 
+   - `n` creates a new partition talbe
+   - `i` displays info on partition
+   - `w` writes changes to partition
+4. Using the `gdisk` utility on the disk: sudo gdisk /dev/xvdb
+5. sudo mkfs.ext4 /dev/xvdb
+6. sudo mkdir /mnt/expanse
 7.
 8. Skip - trust you to do it ;)
 9.
